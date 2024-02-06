@@ -4,7 +4,6 @@
 header {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: 0px 0px 20px 0px #3F79A840;
-
   background-size: cover;
   transition: background-image ease-in-out 1s;
   
@@ -79,3 +78,26 @@ section{}
 {
     opacity: 1;
 }
+
+.input-container{
+  padding: 0;
+
+}
+input, .form-select,.btn-primary{
+min-height: 50px;
+min-width: 150px;
+}
+.card{
+min-height: 350px !important  ;
+border-radius: 10px!important;
+border: 0!important;
+}
+.card-img-top{
+  border-radius: 0!important;
+}
+.top-programs-section{
+  box-shadow: 0px 0px 20px 0px #3F79A840;
+  border-radius: 18px;
+}
+
+
