@@ -2,194 +2,199 @@
 <html lang="en" class="h-100" data-bs-theme="auto">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>OneStride Agency</title>
-    <link rel="stylesheet" href="./assets/cover.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>OneStride Agency</title>
+  <link rel="stylesheet" href="./assets/cover.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body class=" h-100  ">
-    <header id="header" class="d-flex h-100 text-center text-bg-dark">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-            <div class="mb-auto">
-                <div>
-                    <h3 class="float-md-start mb-0">OneStride</h3>
-                    <nav class="nav nav-masthead justify-content-center float-md-end">
-                        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#">Programs</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#">Trips</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#">Reservation</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#">Forum</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#">Explore towns</a>
-                    </nav>
-                </div>
-            </div>
-            <main class="px-3 d-flex flex-column gap-5">
-                <h1 id="mainHeading" class="active"></h1>
-                <p id="mainText" class="lead active"></p>
-                <p class="lead ">
-                    <a id="mainBtn" href="#" class="btn btn-lg btn-light fw-bold border-white bg-white active"></a>
-                </p>
-            </main>
+<body class="h-100">
+  <header id="header" class="d-flex h-100 text-center text-bg-dark">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column ">
+      <div class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">OneStride</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end ">
+            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Programs</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Trips</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Reservation</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Forum</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Explore towns</a>
+            <a class="nav-link fw-bold py-1 px-0 " href="./users/authentification/auth.html">Account</a>
+          </nav>
         </div>
-    </header>
-
-    <section class="search-reservation-form search-reservation-form my-5 text-center d-flex flex-column gap-5">
-        <h3 class="text-uppercase">
-            Customize your reservation
-        </h3>
-        <form action=""
-            class="d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-end gap-3  px-5 mx-auto ">
-            <!-- flight date -->
-            <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container">
-                <!-- <label for="">Departure date </label> -->
-                <input type="date" class="form-control">
-            </div>
-
-            <!-- nombre person  -->
-            <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container">
-                <!-- <label for="">Number of person </label> -->
-                <input type="number" class="form-control" placeholder="Number of person ">
-            </div>
-            <!-- departure town  -->
-            <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container">
-                <!-- <label for="">Destination town </label> -->
-                <select class="form-select">
-                    <option selected>Enter destination town</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <!-- destination town  -->
-            <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container">
-                <!-- <label for="">Departure town </label> -->
-                <select class="form-select">
-                    <option selected>Enter departure town</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <!-- search  -->
-            <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container">
-
-                <button type="button" class="btn btn-primary">Search </button>
-            </div>
-
-
-
-
-        </form>
-    </section>
-    <section class="top-programs-section bg-dark py-5  gap-5 row justify-content-center align-items-center">
-        <h3 class="text-white text-center w-100 text-uppercase">Top programs</h3>
-        <div class="card col-10 col-md-5 col-lg-3 p-0" >
-            <img class="card-img-top" src="./assets/images/carou1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card col-10 col-md-5 col-lg-3 p-0" >
-            <img class="card-img-top" src="./assets/images/carou4.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card col-10 col-md-5 col-lg-3 p-0" >
-            <img class="card-img-top" src="./assets/images/carou3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        <div class="card col-10 col-md-5 col-lg-3 p-0" >
-            <img class="card-img-top" src="./assets/images/carou1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card col-10 col-md-5 col-lg-3 p-0" >
-            <img class="card-img-top" src="./assets/images/carou4.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card col-10 col-md-5 col-lg-3 p-0" >
-            <img class="card-img-top" src="./assets/images/carou3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-    </section>
-    <section class="py-5 px-3 px-lg-5">
-        <h3 class="w-100 text-center mb-5"> Explore flights </h3>
-        <table class="table">
-            <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-          </table>
-
-    </section>
-<section class="text-white w-100 d-flex justify-content-center align-items-center my-5 text-center flex-column gap-5 bg-dark py-5">
-    <h3 class="">Explore towns</h3>
-<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5 px-5">
-    <div class="d-flex flex-column justify-content-center align-items-start gap-2 w-50">
-        <h4 class="p-0 m-0">
-            Town name
-        </h4>
-        <h5 class="p-0 m-0">
-            Localisation
-        </h5>
-        <p class="p-0 m-0 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et ea, velit corrupti non saepe maxime neque, illum quod deserunt pariatur harum optio. Eligendi adipisci laborum necessitatibus aliquid quod asperiores.</p>
+      </div>
+      <main class="px-3 d-flex flex-column gap-5">
+        <h1 id="mainHeading" class="active"></h1>
+        <p id="mainText" class="lead active"></p>
+        <p class="lead ">
+          <a id="mainBtn" href="#" class="btn btn-lg btn-light fw-bold border-white bg-white active"></a>
+        </p>
+      </main>
     </div>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide w-50">
+  </header>
+
+  <section class="search-reservation-form search-reservation-form my-5 text-center d-flex flex-column gap-5">
+    <h3 class="text-uppercase">
+      Customize your reservation
+    </h3>
+    <form action=""
+      class="d-flex flex-column flex-lg-row justify-content-center align-items-center  gap-3  px-5 mx-auto ">
+      <!-- flight date -->
+      <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container form-group ">
+        <label for="">Departure date </label>
+        <input type="date" class="form-control">
+      </div>
+
+      <!-- nombre person  -->
+      <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container form-group ">
+        <label for="">Number of person </label>
+        <input type="number" class="form-control">
+      </div>
+      <!-- departure town  -->
+      <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container form-group ">
+        <label for="">Destination town </label>
+        <select class="form-select">
+          <option selected></option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <!-- destination town  -->
+      <div class="d-flex flex-column justify-content-center align-items-center gap-2 input-container form-group ">
+        <label for="">Departure town </label>
+        <select class="form-select">
+          <option selected></option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <!-- search  -->
+
+
+      <button type="button" class=" btn btn-primary searchBtn">Search </button>
+
+
+
+
+
+    </form>
+  </section>
+  <section class="top-programs-section bg-dark py-5  gap-5 row justify-content-center align-items-center">
+    <h3 class="text-white text-center w-100 text-uppercase">Top programs</h3>
+    <div class="card col-10 col-md-5 col-lg-3 p-0">
+      <img class="card-img-top" src="./assets/images/carou1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div>
+    <div class="card col-10 col-md-5 col-lg-3 p-0">
+      <img class="card-img-top" src="./assets/images/carou4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div>
+    <div class="card col-10 col-md-5 col-lg-3 p-0">
+      <img class="card-img-top" src="./assets/images/carou3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div>
+    <div class="card col-10 col-md-5 col-lg-3 p-0">
+      <img class="card-img-top" src="./assets/images/carou1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div>
+    <div class="card col-10 col-md-5 col-lg-3 p-0">
+      <img class="card-img-top" src="./assets/images/carou4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div>
+    <div class="card col-10 col-md-5 col-lg-3 p-0">
+      <img class="card-img-top" src="./assets/images/carou3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 px-3 px-lg-5">
+    <h3 class="w-100 text-center mb-5"> Explore flights </h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  <section
+    class="text-white w-100 d-flex justify-content-center align-items-center my-5 text-center flex-column gap-5 bg-dark py-5">
+    <h3 class="">Explore towns</h3>
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5 px-5">
+      <div class="d-flex flex-column justify-content-center align-items-start gap-2 w-50">
+        <h4 id="townName" class="p-0 m-0">
+
+        </h4>
+        <h5 id="localisation" class="p-0 m-0">
+
+        </h5>
+        <p id="description" class="p-0 m-0 text-start"></p>
+      </div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide w-50" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <img src="./assets/images/carou2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+
           </div>
           <div class="carousel-item">
             <img src="./assets/images/carou3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -201,20 +206,177 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-</div>
-</section>
+    </div>
+
+  </section>
+
+  <section
+    class="blog-top-articles d-flex flex-column justify-content-center text-center align-items-center gap-2 my-5">
+    <h3 class="text-uppercase">Explore our blog</h3>
+    <div class="py-5 d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 ">
+      <div class="container m-0">
+        <div class="">
+          <div class="">
+            <!-- CUSTOM BLOCKQUOTE -->
+            <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+              <div class="blockquote-custom-icon bg-info shadow-sm"></div>
+              <p class="mb-0 mt-2 font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo ."</p>
+              <div class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
+                <cite title="Source Title">Source Title</cite>
+              </div>
+            </blockquote><!-- END -->
+
+          </div>
+        </div>
+      </div>
+      <div class="container m-0">
+        <div class="">
+          <div class="">
+            <!-- CUSTOM BLOCKQUOTE -->
+            <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+              <div class="blockquote-custom-icon bg-info shadow-sm"></div>
+              <p class="mb-0 mt-2 font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo ."</p>
+              <div class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
+                <cite title="Source Title">Source Title</cite>
+              </div>
+            </blockquote><!-- END -->
+
+          </div>
+        </div>
+      </div>
+      <div class="container m-0">
+        <div class="">
+          <div class="">
+            <!-- CUSTOM BLOCKQUOTE -->
+            <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+              <div class="blockquote-custom-icon bg-info shadow-sm"></div>
+              <p class="mb-0 mt-2 font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo ."</p>
+              <div class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
+                <cite title="Source Title">Source Title</cite>
+              </div>
+            </blockquote><!-- END -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary">Join now</button>
+  </section>
 
 
-    <footer class="my-5 text-white-50">
-        test
-    </footer>
 
-    <script type="text/javascript" src="./assets/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <footer class="bg-dark text-center text-lg-start text-white py-3">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">See other books</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>All books</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Our authors</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Execution of the contract</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Publishing house</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">The BookStore</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">123 Street</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">05765 NY</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a book</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Write to us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order
+                status</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the newsletter</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script type="text/javascript" src="./assets/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
 
