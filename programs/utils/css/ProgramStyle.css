@@ -1,4 +1,41 @@
 .filter-side{
     height: 100vh;
-  min-width: 50px;
+  min-width: 60px;
+  
+}
+
+#sidebar {
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#content {
+  margin-left: 60px;
+  transition: margin-left 0.5s;
+}
+
+#sidebar.open {
+  width: 250px; /* Adjust width as needed */
+}
+
+#content.open {
+  margin-left: 250px; /* Adjust margin-left to match sidebar width */
+}
+#toggle-sidebar-button{
+  width: 70%!important;
+}
+.side-input-hidden {
+  display: none!important;
+}
+.side-input-active {
+  width: 70%!important;
+  display: block!important;
+}
+.program-card-container{
+  min-width: 300px;
 }
