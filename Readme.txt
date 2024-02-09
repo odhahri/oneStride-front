@@ -44,3 +44,15 @@ paginated articles , open it with modal and show comments , comment btn and reac
  Explore towns page : 
 Search town input : 
 occurences in cards and open each one with a modal . 
+
+
+
+------------------------------------
+Profile page 
+Made reservations
+Saved articles 
+
+------------------------------------
+
+
+

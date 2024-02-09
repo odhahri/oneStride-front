@@ -39,3 +39,7 @@
 .program-card-container{
   min-width: 300px;
 }
+.program-card:hover{
+  opacity: .8;
+ 
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Make a reservation</title>
+    <link rel="stylesheet" href="./utils/css/reservationStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <main>
+        <div class="stepper">
+            <div class="step--1 step-active">Reservation Type </div>
+            <div class="step--2">Number of person</div>
+            <div class="step--3">Confirmation</div>
+        </div>
+        <form class="form form-active">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    What do you want to reserve ?
+                </h1>
+                <p class="form--header-text">
+                    Select type of reservation
+                </p>
+            </div>
+            <div class="form-floating m-5">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected></option>
+                    <option value="1">Reserve a flight</option>
+                    <option value="2">Apply for a program</option>
+                </select>
+                <label for="floatingSelect">Select a type of reservation</label>
+            </div>
+            <!-- flight reservation  -->
+            <div class="flight-reservation d-none">
+                <div class="d-flex flex-column justify-content-center align-items-center gap-3 my-5">
+                    <h4 class="px-2 m-0">Search and select a flight </h4>
+                    <div class="dropdown">
+                        <style>
+                            .custom-dropdown-toggle {
+                                background-color: transparent;
+                                border: none;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        </style>
+                        <button id="toggleDropdown" data-bs-toggle="modal" data-bs-target="#staticBackdropFlight"
+                            class="custom-dropdown-toggle">
+                            <span class="material-symbols-outlined">
+                                flight_takeoff
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Plane</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Departure Town</th>
+                            <th scope="col">Destination Town</th>
+                            <th scope="col">Departure Date</th>
+                            <th scope="col">Coming Date</th>
+                            <th scope="col">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Airbus A320</td>
+                            <td>$250</td>
+                            <td>1</td>
+                            <td>New York</td>
+                            <td>Los Angeles</td>
+                            <td>2024-02-15</td>
+                            <td>2024-02-16</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- program reservation  -->
+            <div class="program-reservation d-none">
+                <div class="d-flex flex-column justify-content-center align-items-center gap-3 my-2">
+                    <h4 class="px-2 m-0">Search and select a program </h4>
+                    <div class="dropdown">
+                        <style>
+                            .custom-dropdown-toggle {
+                                background-color: transparent;
+                                border: none;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        </style>
+                        <button id="toggleDropdown" data-bs-toggle="modal" data-bs-target="#staticBackdropProgram"
+                            class="custom-dropdown-toggle">
+                            <span class="material-symbols-outlined">
+                                loyalty
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row w-100 justify-content-center">
+                    <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+                        <img class="card-img-top" src="./utils/images/carou4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+
+            </div>
+            <button class="form__btn" id="btn-1">Next</button>
+            <!--Search Trip Modal -->
+            <div class="modal fade modal-xl" id="staticBackdropFlight" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div
+                                class="container w-100 d-flex flex-column justify-content-center align-items-center py-5">
+                                <div class="card custom-bg w-75 p-4 d-flex">
+                                    <div class="row">
+                                        <div class="pb-3 h3 text-left">Flight Search &#128747;</div>
+                                    </div>
+                                    <form id="flight-form" onsubmit="return validateForm()">
+                                        <div class="row">
+                                            <div class="form-group col-md align-items-start flex-column">
+                                                <label for="origin" class="d-inline-flex">From</label>
+                                                <input type="text" placeholder="City or Airport" class="form-control"
+                                                    id="origin" name="origin" required>
+                                            </div>
+                                            <div class="form-group col-md align-items-start flex-column">
+                                                <label for="depart" class="d-inline-flex">To</label>
+                                                <input type="text" placeholder="City or Airport" class="form-control"
+                                                    id="depart" name="depart" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md align-items-start flex-column">
+                                                <label for="departure-date" class=" d-inline-flex">Depart</label>
+                                                <input type="date" class="form-control" id="departure-date"
+                                                    name="departure-date" onkeydown="return false" required>
+                                            </div>
+                                            <div class="form-group col-md align-items-start flex-column">
+                                                <label for="return-date" class="d-inline-flex">Return</label>
+                                                <input type="date" placeholder="One way" value=""
+                                                    onChange="this.setAttribute('value', this.value)"
+                                                    class="form-control" id="return-date" name="return-date">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 align-items-start flex-column">
+                                                <label for="adults" class="d-inline-flex col-auto">Adults <span
+                                                        class="sublabel"> 12+
+                                                    </span></label>
+                                                <select class="form-select" id="adults"
+                                                    onchange="javascript: dynamicDropDown(this.options[this.selectedIndex].value);">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 align-items-start flex-column">
+                                                <label for="children" class="d-inline-flex col-auto">Children <span
+                                                        class="sublabel"> 2-11
+                                                    </span></label>
+                                                <select class="form-select" id="children">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 align-items-start flex-column">
+                                                <label for="infants" class="d-inline-flex col-auto">Infants <span
+                                                        class="sublabel"> less than
+                                                        2</span></label>
+                                                <select class="form-select" id="infants">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 align-items-start flex-column">
+                                                <label for="cabin" class="d-inline-flex">Cabin</label>
+                                                <select class="form-select" id="cabin">
+                                                    <option value="ECONOMY">Economy</option>
+                                                    <option value="PREMIUM_ECONOMY">Premium Economy</option>
+                                                    <option value="BUSINESS">Business</option>
+                                                    <option value="FIRST">First</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-6 align-items-start flex-column pt-lg-4">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input align-self-center" type="checkbox"
+                                                        id="directFlights">
+                                                    <label class="form-check-label d-inline-flex align-self-center"
+                                                        for="directFlights">Direct
+                                                        flights</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-left col-auto">
+                                                <button type="submit" class="btn btn-primary">Search
+                                                    flights</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                                Found : 2 Flight
+                            </div>
+                            <div class=" p-5 flights-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">&nbsp;</th>
+                                            <th scope="col">Plane</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Departure Town</th>
+                                            <th scope="col">Destination Town</th>
+                                            <th scope="col">Departure Date</th>
+                                            <th scope="col">Coming Date</th>
+                                            <th scope="col">&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Airbus A320</td>
+                                            <td>$250</td>
+                                            <td>1</td>
+                                            <td>New York</td>
+                                            <td>Los Angeles</td>
+                                            <td>2024-02-15</td>
+                                            <td>2024-02-16</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Boeing 737</td>
+                                            <td>$300</td>
+                                            <td>2</td>
+                                            <td>London</td>
+                                            <td>Paris</td>
+                                            <td>2024-02-17</td>
+                                            <td>2024-02-18</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Embraer E195</td>
+                                            <td>$200</td>
+                                            <td>1</td>
+                                            <td>Beijing</td>
+                                            <td>Shanghai</td>
+                                            <td>2024-02-20</td>
+                                            <td>2024-02-21</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Search Program  Modal -->
+            <div class="modal fade modal-xl" id="staticBackdropProgram" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Select a program to reserve</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <div id="content"
+                                class="d-flex flex-column justify-content-center align-items-center gap-1 w-100">
+                                <div class="form-floating mb-3 w-50">
+
+                                    <input type="date" class="form-control ">
+                                    <label for="floatingInput">Departure date</label>
+                                </div>
+                                <div class="form-floating w-50">
+                                    <select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected></option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Filter by town</label>
+                                </div>
+                                <div
+                                    class=" p-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-center align-items-center gap-2 w-100">
+
+                                    <h5 class="p-0 m-0 fw-bolder">Result: </h3>
+                                        <h5 class="p-0 m-0">found 4</h5>
+                                </div>
+                                <section
+                                    class="top-programs-section  py-5  gap-5 row justify-content-center align-items-center w-100">
+                                    <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+                                        <img class="card-img-top" src="./utils/images/carou1.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's
+                                                content.</p>
+                                        </div>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary  m-3">
+                                            Reserve Now
+                                        </button>
+
+
+                                    </div>
+
+                                </section>
+                                <!-- Modal -->
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form class="form">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    Person reservation infos
+                </h1>
+
+                <p class="form--header-text">
+                    Tell us about the reservation number of person .
+                </p>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="form-floating mb-3 m-5  ">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Total number">
+                    <label for="floatingInput">Total person number</label>
+                </div>
+                <div class="form-floating mb-3 m-5 ">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Childrens number">
+                    <label for="floatingInput">Childrens number</label>
+                </div>
+                <div class="form-floating mb-3 m-5 ">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Adults number">
+                    <label for="floatingInput">Adults number</label>
+                </div>
+            </div>
+            <button class="form__btn" id="btn-2-prev">Previous</button>
+            <button class="form__btn" id="btn-2-next">Next</button>
+        </form>
+        <form class="form">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    Confirm with a comment
+                </h1>
+
+                <p class="form--header-text">
+                    Tell us your desire about this reservation
+                </p>
+            </div>
+            <div class="form-floating m-5">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button class="form__btn" id="btn-3-prev">Previous</button>
+            <button class="form__btn" id="btn-3">Submit</button>
+        </form>
+
+    </main>
+
+
+
+    <script type="text/javascript" src="./utils/scripts/reservationScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

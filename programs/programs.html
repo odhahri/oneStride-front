@@ -17,129 +17,117 @@
 <body class="d-flex flex-row justify-content-start align-items-start    ">
 
 
-  <div id="sidebar" class="filter-side d-flex flex-column justify-content-start align-items-center gap-2 bg-dark ">
-    <button id="toggle-sidebar-button" class="btn btn-primary d-flex justify-content-center align-items-center"><span
+  <div id="sidebar" class="filter-side d-flex flex-column justify-content-center align-items-center gap-2 bg-dark ">
+    <button id="toggle-sidebar-button"
+      class="btn btn-primary d-flex justify-content-center align-items-center mt-2"><span
         class="material-symbols-outlined">
         filter_list
       </span></button>
-    <input type="text" name="" class="form-control side-input-hidden ">
-    <input type="text" name="" class="form-control side-input-hidden ">
-    <input type="text" name="" class="form-control side-input-hidden ">
-    <input type="text" name="" class="form-control side-input-hidden ">
-    <input type="text" name="" class="form-control side-input-hidden ">
-    <input type="text" name="" class="form-control side-input-hidden ">
+
+    <div class="form-floating mb-3 side-input-hidden">
+
+      <input type="date" class="form-control ">
+      <label for="floatingInput">Departure date</label>
+    </div>
+    <div class="form-floating side-input-hidden">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected></option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <label for="floatingSelect">Filter by town</label>
+    </div>
 
   </div>
-  <div id="content" class="d-flex flex-column justify-content-center align-items-center gap-2 w-100">
+  <div id="content" class="d-flex flex-column justify-content-center align-items-center gap-1 w-100">
     <div
-      class="p-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-start align-items-center gap-2 w-100">
-      <button class="btn btn-danger text-center m-0">Home</button>
-      <h5 class="p-0 m-0 fw-bolder">Total des programs: </h3>
-        <h5 class="p-0 m-0">found programs exp 4</h5>
+      class=" p-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-center align-items-center gap-2 w-100">
+
+      <h5 class="p-0 m-0 fw-bolder">Result: </h3>
+        <h5 class="p-0 m-0">found 4</h5>
     </div>
-    <div class="program-card-container p-4 row justify-content-start  align-items-center w-100 gap-2">
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
+    <section class="top-programs-section  py-5  gap-5 row justify-content-center align-items-center w-100">
+      <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+        <img class="card-img-top" src="./utils/images/carou1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary  m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Explore
+        </button>
+
+
+      </div>
+      <!-- <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+        <img class="card-img-top" src="./utils/images/carou4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3 ">
-        <div class="card-header">
-          Program Label
-        </div>
+      <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+        <img class="card-img-top" src="./utils/images/carou3.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
+      <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+        <img class="card-img-top" src="./utils/images/carou1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
+      <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+        <img class="card-img-top" src="./utils/images/carou4.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
       </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
+      <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+        <img class="card-img-top" src="./utils/images/carou3.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
         </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
-        </div>
-      </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
-        </div>
-      </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
-        </div>
-      </div>
-      <div class="card text-center col-10 col-md-5 col-lg-3 my-3 mx-3">
-        <div class="card-header">
-          Program Label
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">Program Description </p>
-          <a href="#" class="btn btn-primary">Open Details</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-          Program start time
+      </div> -->
+    </section>
+    <!-- Modal -->
+    <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Program title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column justify-content-center align-items-start">
+            <div class="program-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta laborum, odio asperiores adipisci veniam
+              dolores. Nisi quibusdam sapiente quisquam quae accusamus corrupti earum porro veniam odit fuga aperiam,
+              ratione illo.
+            </div>
+            <div class="program-towns py-4">
+              <h4>Town that the program includes</h4>
+            </div>
+            <div class="program-imgs py-5 w-50">
+              <img class="w-100 " src="./utils/images/carou2.jpg" alt="">
+            </div>
+
+            <div class="program-services">
+              Mention the program services
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Reserve Now</button>
+          </div>
         </div>
       </div>
     </div>
