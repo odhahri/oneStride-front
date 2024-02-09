@@ -61,3 +61,18 @@ const gotoNextForm = (prev, next, stepPrev, stepNext) => {
 };
 
 
+$(document).ready(function () {
+    $('#floatingSelect').change(function () {
+        var selectedOption = $(this).val();
+
+        if (selectedOption == 1) {
+            $('.flight-reservation').removeClass('d-none');
+            $('.program-reservation').addClass('d-none');
+        } else if (selectedOption == 2) {
+            $('.flight-reservation').addClass('d-none');
+            $('.program-reservation').removeClass('d-none');
+        }
+    });
+});
+
+

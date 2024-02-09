@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +18,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="d-flex flex-column justify-content-center align-items-center gap-5 mt-5 mb-5">
         <div class="stepper">
             <div class="step--1 step-active">Reservation Type </div>
             <div class="step--2">Number of person</div>
@@ -43,26 +42,20 @@
                 <label for="floatingSelect">Select a type of reservation</label>
             </div>
             <!-- flight reservation  -->
-            <div class="flight-reservation d-none">
+            <div class="flight-reservation d-none ">
                 <div class="d-flex flex-column justify-content-center align-items-center gap-3 my-5">
-                    <h4 class="px-2 m-0">Search and select a flight </h4>
-                    <div class="dropdown">
-                        <style>
-                            .custom-dropdown-toggle {
-                                background-color: transparent;
-                                border: none;
-                                padding: 0;
-                                margin: 0;
-                            }
-                        </style>
-                        <button id="toggleDropdown" data-bs-toggle="modal" data-bs-target="#staticBackdropFlight"
-                            class="custom-dropdown-toggle">
-                            <span class="material-symbols-outlined">
-                                flight_takeoff
-                            </span>
-                        </button>
+                    <h4 class="px-2 m-0">Search and select a program </h4>
+                    <style>
+                        .custom-dropdown-toggle {
+                            width: 100%;
+                            height: 30px;
+                        }
+                    </style>
+                    <div data-bs-toggle="modal" data-bs-target="#staticBackdropFlight" class="custom-dropdown-toggle">
+                        <span class="material-symbols-outlined w-100">
+                            flight_takeoff
+                        </span>
                     </div>
-
                 </div>
                 <table class="table">
                     <thead>
@@ -95,29 +88,31 @@
                 </table>
             </div>
             <!-- program reservation  -->
-            <div class="program-reservation d-none">
+            <div class="program-reservation d-none ">
                 <div class="d-flex flex-column justify-content-center align-items-center gap-3 my-2">
                     <h4 class="px-2 m-0">Search and select a program </h4>
-                    <div class="dropdown">
-                        <style>
-                            .custom-dropdown-toggle {
-                                background-color: transparent;
-                                border: none;
-                                padding: 0;
-                                margin: 0;
-                            }
-                        </style>
-                        <button id="toggleDropdown" data-bs-toggle="modal" data-bs-target="#staticBackdropProgram"
-                            class="custom-dropdown-toggle">
-                            <span class="material-symbols-outlined">
-                                loyalty
-                            </span>
-                        </button>
+                    <style>
+                        .custom-dropdown-toggle {
+                            width: 100%;
+                            height: 30px;
+                        }
+                    </style>
+
+                    <div data-bs-toggle="modal" data-bs-target="#staticBackdropProgram" class="custom-dropdown-toggle">
+                        <span class="material-symbols-outlined w-100">
+                            loyalty
+                        </span>
+
+
                     </div>
+
 
                 </div>
                 <div class="d-flex flex-row w-100 justify-content-center">
                     <div class="card col-10 col-md-5 col-lg-3 p-0 program-card">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
                         <img class="card-img-top" src="./utils/images/carou4.jpg" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -126,13 +121,15 @@
                                 content.</p>
                         </div>
                     </div>
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
+
                 </div>
 
             </div>
             <button class="form__btn" id="btn-1">Next</button>
+
+
+
+
             <!--Search Trip Modal -->
             <div class="modal fade modal-xl" id="staticBackdropFlight" data-bs-backdrop="static"
                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -460,12 +457,13 @@
 
 
 
-    <script type="text/javascript" src="./utils/scripts/reservationScript.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./utils/scripts/reservationScript.js"></script>
 </body>
 
 </html>

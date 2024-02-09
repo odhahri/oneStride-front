@@ -56,3 +56,25 @@ Saved articles
 
 
 
+
+Fix the home loading 
+
+Make the header in all the pages 
+
+to do : 
+	Reservation form in Home : to delete - change it with satified users ... 
+Explore flights : 
+	Flights of the week 
+	Add button to do to flights page 
+Explore towns : 
+	Add button to go to towns page 
+Edit the footer 
+
+Profile page : 
+Can open the article from there 
+can check the reservation infos with a modal and cancel it 
+
+Reservation page : a nice background or color 
+
+
+
