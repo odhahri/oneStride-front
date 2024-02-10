@@ -1,3 +1,7 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1604629142630-11d209431dd7?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size: contain;
+}
 .form-group {
   display: flex;
   justify-content: center;
@@ -55,15 +59,31 @@ input[type="date"]:not([value=""]):before {
 }
 
 .custom-bg {
-  background-color: #f7f7f9;
+  background-color: #ffffffe8!important;
 }
 
 
 .flights-table{
   width: 80%;
+  min-width: 400px;
+  background-color: #ffffffed!important;
+  overflow-x: scroll;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+
+}
+.table{
+  --bs-table-bg:none!important;
+
+  
 }
 
-
+.flights-found-message{
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #fff;
+}
 
 
 

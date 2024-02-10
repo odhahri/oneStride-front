@@ -78,3 +78,14 @@ Reservation page : a nice background or color
 
 
 
+-------------------
+A rectifier : 
+
+Program : 
+	ADD Child price 
+Flight : 
+	ADD Child price 
+	ADD Cabin
+	ADD Availabe-Place
+
+	
