@@ -24,7 +24,7 @@ $(document).ready(function () {
                             <td>${flight.destinationTown.townName}</td>
                             <td>${formatDate(flight.departureDate)}</td>
                             <td>${formatDate(flight.comingDate)}</td>
-                            <td><button onclick="reserve(${flight.tripId})">Reserve</button></td>
+                            <td><button class="btn btn-primary" onclick="reserve(${flight.tripId})">Reserve</button></td>
                         </tr>
                     `;
 
@@ -84,7 +84,7 @@ $(document).ready(function () {
                                 <td>${flight.destinationTown.townName}</td>
                                 <td>${formatDate(flight.departureDate)}</td>
                                 <td>${formatDate(flight.comingDate)}</td>
-                                <td><button onclick="reserve(${flight.tripId})">Reserve</button></td>
+                                <td><button class="btn btn-primary" onclick="reserve(${flight.tripId})">Reserve</button></td>
                             </tr>
                         `;
                         $('.flights-table tbody').append(row);
